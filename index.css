@@ -1,0 +1,1923 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(10, 10, 10);
+}
+.nav-mobile{
+    display: none;
+}
+#mobile-menu-button{
+    animation: Mobile-buttoAni 2s;
+}
+@keyframes Mobile-buttoAni {
+    0%{
+        opacity: 0;
+        position: relative;
+        right: 50px;
+    }
+    100%{
+        opacity: 1;
+        right: 0px;
+    }
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a {
+    color: inherit;
+    text-decoration: none; 
+  }
+.head{
+    margin-left: 100px;
+    font-size: 30px;
+}
+.domain{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    background-color: black;
+    color: lightcoral; 
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav li{
+    font-family: 'Kanit', sans-serif;
+    color: lightcoral;
+    transition: color 0.3s ease-in-out;
+}
+nav li:hover{
+    color: lightblue;
+}
+nav li.active{
+    font-family: 'Kanit', sans-serif;
+    transition: color 0.3s ease-in-out;
+    color: lightblue;
+}
+h1{
+    margin: 5px;
+    color: lightblue;
+    font-family: 'Kanit', sans-serif;
+}
+h2{
+    font-family: 'Kanit', sans-serif;
+    margin: 5px;
+    color: lightblue;
+    
+}
+h2 b{
+    font-family: 'Tilt Prism';
+}
+p{
+    font-family: 'Kanit', sans-serif;
+    color: lightblue;
+}
+h3{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color:lightcoral;
+    overflow: hidden; /* Ensures the text won't overflow */
+    white-space: nowrap;
+    animation: typing 2s steps(1000);
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+li{
+    cursor:pointer;
+    margin: 15px;
+}
+.intro-first{
+    /* margin: 10px; */
+    animation: intro 1.5s;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro-in{
+    margin: 5px;
+    height: 40%;
+    width: 100%;
+
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+
+
+}
+@keyframes intro {
+    0%{
+        position: relative;
+        right: 50px;
+        
+    }
+    100%{
+        position: relative;
+        right: 0px;
+        
+    }
+}
+footer{
+    width: 100vw;
+    height: 55px;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+.footer-text{
+    margin: 10px;
+}
+.Home{
+    position: relative;
+    margin-top: 0px;
+    background-color: black;
+    color: bisque;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+.introduction{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+.description-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+
+}
+.intro{
+    animation: StartAni 1s;
+    font-size: 25px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color:  white;
+    height: 100%;
+    width: 35vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.div-home-button{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center ;
+    height: 20vh;
+
+}
+.Button-Home{
+    animation: StartAni 1s;
+    font-family: 'Kanit', sans-serif;
+    /* animation: StartAni 1.5s; */
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightblue;
+    color: lightcoral;
+    border: 2px solid lightblue;
+    border-radius:  5px ;
+    box-shadow: 5px 5px 10px black;
+    margin: 5px;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out , color 0.3s ease-in-out, border 0.3s ease-in-out , box-shadow 0.3s ease-in-out;
+}
+@keyframes StartAni {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.Button-Home:hover{
+    
+    background-color: lightcoral;
+    color: lightblue;
+    border: 2px solid lightcoral;
+    box-shadow: 5px 5px 10px  rgb(240, 162, 162 , 0.5);
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.social-media{ 
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start ;
+    height: 20vh;
+    
+}
+#insta{
+    animation: SocialAni 1s;
+}
+#git{
+    animation: SocialAni 1.5s;
+}
+#link{
+    animation: SocialAni 2s;
+}
+
+.left-section-home{
+    margin: 20px;
+    width: 48%;
+    height: 100vh;
+}
+.right-section-home{
+    animation: PhotoAni 2s;
+    width: 48%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@keyframes PhotoAni {
+    0%{
+        opacity: 0;
+        position: relative;
+        bottom: 100px;
+        left: 100px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        
+    }
+}
+#insta:hover{
+ box-shadow: 5px 5px 10px  rgb(240, 128, 128 , 0.5);
+}
+#git:hover{
+    box-shadow: 5px 5px 10px  rgb(211, 211, 211 , 0.5);
+}
+#link:hover{
+    box-shadow: 5px 5px 10px  rgba(77, 80, 235, 0.5);
+}
+.sm-indi{
+    margin: 15px;
+    cursor: pointer;
+    animation: StartAni 1s;
+    
+}
+@keyframes SocialAni {
+    0%{
+        position: relative;
+        bottom: -50px;
+        overflow: hidden;
+    }
+    100%{
+        position: relative;
+        bottom: 0px;
+        
+    }
+}
+
+
+.about{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+}
+.about-head{
+    animation: abouthead 2s;
+    color: lightcoral;
+    font-size: 40px;
+}
+@keyframes abouthead{
+    0%{
+        position: relative;
+        bottom: -15px;
+    }
+    100%{
+        position: relative;
+        bottom: 0px;
+    }
+}
+.top-about{
+   animation: PhotoAniabout 2s; 
+}
+@keyframes PhotoAniabout {
+    0%{
+        opacity: 0;
+        position: relative;
+        bottom: 100px;
+        
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        bottom: 0px;
+        
+        
+    }
+}
+.bottom-about{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.contact{
+    font-size: 30px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+}
+.info-contact{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+input{
+    animation: inpAni 2s;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+    color: lightcoral;
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+input:hover{
+    box-shadow: 5px 5px 10px  rgb(173, 216, 230, 0.5);
+}
+textarea{
+    animation: inpAni 3s;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+    color: lightcoral;
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+textarea:hover{
+    box-shadow: 5px 5px 10px  rgb(173, 216, 230, 0.5);
+}
+.submit-contact{
+    animation: inpAni 4s;
+    background-color: lightcoral;
+    color: lightblue;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid lightcoral;
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Kanit';
+    width: 90px;
+    transition: background-color 0.3s ease-in-out , color 0.3s ease-in-out, border 0.3s ease-in-out, box-shadow 0.3s ease-in-out ;
+}
+.submit-contact:hover{
+    box-shadow: 5px 5px 10px  rgb(173, 216, 230, 0.5);
+    background-color: lightblue;
+    color: lightcoral;
+    border: 2px solid lightblue;
+}
+.contact-head{
+    animation: contacthead 2s;
+}
+@keyframes contacthead{
+    0%{
+        opacity: 0;
+        position: relative;
+        bottom: -30px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        bottom: 0px;
+    }
+}
+@keyframes inpAni {
+    0%{
+        position: relative;
+        opacity: 0;
+        bottom: 30px;
+    }
+    100%{
+        position: relative;
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+.project-head{
+    animation: projectAni 2s;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+@keyframes projectAni {
+    0%{
+        opacity: 0;
+        position: relative;
+        top: 100px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        top: 50px;
+    }
+}
+.Projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.proj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+.project-container{
+    /* animation: projectcont 2s; */
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    border: 2px solid rgb(20, 20, 20);
+    border-radius: 10px;
+    height: 350px;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out , width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+#task{
+    animation: projectcont 1s;
+}
+#patel{
+    animation: projectcont 2s;
+}
+#E-com{
+    animation: projectcont 3s;
+}
+@keyframes projectcont {
+    0%{
+        opacity: 0;
+        position: relative;
+        bottom: 100px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        bottom: 0px;
+    }
+}
+.project-name{
+    position: relative;
+    bottom: 15px;
+    font-size: 27px;
+   
+}
+.project-container:hover{
+    height:355px ;
+    width: 380px;
+    box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+}
+.image-projects{
+    border-radius: 5px;
+}
+.description{
+    margin-top: 10px;
+    color: lightblue;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out;
+    
+}
+.project-container:hover .description{
+    opacity: 1;
+    visibility: visible;
+}
+.skills-head{
+    font-size: 40px;
+    animation: skillheadAni 3s;
+}
+@keyframes skillheadAni{
+    0%{
+        opacity: 0;
+        position: relative;
+        bottom: 100px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        bottom: 0px;
+    }
+}
+@keyframes skillAni{
+    0%{
+        opacity: 0;
+        position: relative;
+        top: 100px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        top: 0px;
+    }
+}
+.skills{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+}
+.skill-set{
+    
+    width: 100%;
+    height: 50vh;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#html{
+    animation: skillAni 1s;
+}
+#css{
+    animation: skillAni 1.5s;
+}
+#javascript{
+    animation: skillAni 2s;
+}
+#java{
+    animation: skillAni 4.5s;    
+}
+#c{
+    animation: skillAni 5s;
+}
+#cpp{
+    animation: skillAni 5.5s;
+}
+#mongodb{
+    animation: skillAni 4s;
+}
+#sql{
+    animation: skillAni 3.5s;
+}
+#node{
+    animation: skillAni 3s;
+}
+#react{
+    animation: skillAni 2.5s;
+}
+.skill{
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border:  2px solid rgb(20, 20, 20);
+    border-radius: 10px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: lightblue;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-in-out , color 0.3s ease-in-out;
+
+}
+.skill:hover{
+    color: lightcoral;
+    box-shadow: 5px 5px 10px rgb(240, 128, 128 , 0.5);  
+}
+.info-skill{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: lightcoral;
+}
+.skill:hover .info-skill{
+    opacity: 1;
+    visibility: visible;
+    color: lightcoral;
+    
+}
+.skill-set-part{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.tools-head{
+    font-size: 40px;
+    position: relative;
+    bottom: 50px;
+    animation: toolheadAni 3s;
+}
+@keyframes toolheadAni{
+    0%{
+        opacity: 0;
+        position: relative;
+        bottom: 150px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        bottom: 50px;
+    }
+}
+@keyframes toolAni{
+    0%{
+        opacity: 0;
+        position: relative;
+        top: 100px;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        top: 0px;
+    }
+}
+.tools{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(10, 10, 10);
+}
+.tool-set{
+    
+    width: 100%;
+    height: 50vh;
+    
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+}
+#Github{
+    animation: toolAni 1.5s;
+}
+#Linux{
+    animation: toolAni 2s;
+}
+#Postman{
+    animation: toolAni 2.5s;
+}
+.tool{
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 5px 5px 10px rgb(30, 30, 30);
+    border:  2px solid rgb(10, 10, 10);
+    border-radius: 10px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: lightcoral;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-in-out , color 0.3s ease-in-out;
+
+}
+.tool:hover{
+    color: lightblue;
+    box-shadow: 5px 5px 10px rgb(173, 216, 230,0.5);  
+}
+.info-tool{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: lightblue;
+}
+.tool:hover .info-tool{
+    opacity: 1;
+    visibility: visible;
+    color: lightblue;
+    
+}
+.tool-set-part{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1400px) {
+    p{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font: 5px;
+    }
+    h3{
+        font:5px;
+    }
+}
+
+@media screen and (max-height: 675px) {
+    .skills-head{
+        font-size: 30px;
+    }
+    .skill{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+    .project-head{
+        position: relative;
+        top: 0px;
+        font-size: 35px;
+    }
+    .project-container{
+        height: 250px;
+        width: 300px;
+        padding: 10px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .project-container:hover{
+        height:250px ;
+        width: 320px;
+        box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+    }
+    .project-container:hover .description{
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .image-projects{
+        height: 75px;
+        
+    }
+    .profile{
+        height: 400px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .Button-Home{
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-height: 570px) {
+    .skills-head{
+        font-size: 20px;
+        position: relative;
+        bottom: 20px;
+        animation: skillheadAni2 2s;
+    }
+    @keyframes skillheadAni2{
+        0%{
+            opacity: 0;
+            position: relative;
+            bottom: 100px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            bottom: 20px;
+        }
+    }
+    .skill{
+        height: 70px;
+        width: 120px;
+        font-size: 15px;
+    }
+    .project-head{
+        position: relative;
+      bottom: 0px;
+        font-size: 30px;
+        animation: projectAni10 2s;
+    }
+    @keyframes projectAni10 {
+        0%{
+            opacity: 0;
+            position: relative;
+            top: 100px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            top: 50px;
+        }
+    }
+    .project-container{
+        height: 205px;
+        width: 250px;
+        padding: 10px;
+        display: flex;
+       
+    }
+    .project-container:hover{
+        height:210px ;
+        width: 255px;
+        box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+    }
+    .project-container:hover .description{
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .image-projects{
+        height: 75px;
+        
+    }
+    .profile{
+        height: 300px;
+    }
+    p{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .Button-Home{
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-height: 300px) {
+    .intro{
+        flex-wrap: nowrap;
+    }
+    .introduction{
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .profile{
+        height: 400px;
+    }
+    .project-head{
+        position: relative;
+        top: 100px;
+        font-size: 30px;
+        animation: projectAni2 2s;
+    }
+    @keyframes projectAni2 {
+        0%{
+            opacity: 0;
+            position: relative;
+            top: 150px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            top: 100px;
+        }
+    }
+    .skills-head{
+        font-size: 30px;
+    }
+    .skill{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+    .image-projects{
+        height: 70px;
+    }
+    .project-container{
+        height: 200px;
+        width: 250px;
+        padding: 10px;
+        display: flex;
+       flex-direction: column;
+       font-size: 10px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .tools-head{
+        position: relative;
+        bottom: 100px;
+        animation: skillheadAni5 2s;
+    }
+    @keyframes skillheadAni5{
+        0%{
+            opacity: 0;
+            position: relative;
+            bottom: 0px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            bottom: 100px;
+        }
+    }
+    .project-container:hover{
+        height:210px ;
+        width: 255px;
+        box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+    }
+    .project-container:hover .description{
+
+        opacity: 1;
+        visibility: visible;
+    }
+} 
+
+
+
+
+@media screen and (max-width: 900px) {
+    .profile{
+        height: 300px;
+    }
+    .project-head{
+        position: relative;
+        top: 100px;
+        font-size: 30px;
+        animation: projectAni2 2s;
+    }
+    @keyframes projectAni2 {
+        0%{
+            opacity: 0;
+            position: relative;
+            top: 150px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            top: 100px;
+        }
+    }
+    .skills-head{
+        font-size: 30px;
+        position: relative;
+        bottom: 100px;
+        animation: skillheadAni2 2s;
+    }
+    @keyframes skillheadAni2{
+        0%{
+            opacity: 0;
+            position: relative;
+            bottom: 200px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            bottom: 100px;
+        }
+    }
+    .skill{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+    .image-projects{
+        height: 50px;
+    }
+    .project-name{
+        font-size: 19px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .project-container{
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+        display: flex;
+        font-size: 10px;
+       
+    }
+    .project-container:hover{
+        height:200px ;
+        width: 200px;
+        box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+    }
+    .project-container:hover .description{
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .tools-head{
+        font-size: 30px;
+        position: relative;
+        bottom: 50px;
+        animation: skillheadAni10 2s;
+    }
+    @keyframes skillheadAni10{
+        0%{
+            opacity: 0;
+            position: relative;
+            bottom: 100px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            bottom: 50px;
+        }
+    }
+    .tool{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+} 
+
+
+
+
+@media screen and (max-width: 700px) {
+    #mobile-menu-button{
+        background-color: lightblue;
+        color: lightcoral;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        height: 30px;
+        width:80px;
+        position: relative;
+        right: 0px;
+        top: 10px;
+    }
+    
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nav-window{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .profile{
+    
+        height: 300px;
+    }
+    .Home{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+    }
+    .introduction{
+        width: 100%;
+    }
+    .intro{
+        width: 100vw;
+    }
+    .left-section-home{
+        width: 100vw;
+    }
+    .right-section-home{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        width: 100vw;
+    }
+    .project-head{
+        position: relative;
+        top: 0px;
+        font-size: 30px;
+        animation: projectAni2 2s;
+    }
+    .proj{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-container{
+        margin-bottom: 20px;
+    }
+    @keyframes projectAni2 {
+        0%{
+            opacity: 0;
+            position: relative;
+            top: 150px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            top: 0px;
+        }
+    }
+    .skills-head{
+        font-size: 30px;
+        position: relative;
+        top: -150px;
+        animation: skillheadAni3 2s;
+    }
+    @keyframes skillheadAni3{
+        0%{
+            opacity: 0;
+            position: relative;
+           top: 50px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+           top: -150px;
+        }
+    }
+    .skill{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+    .image-projects{
+        height: 50px;
+    }
+    .project-name{
+        font-size: 19px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .project-container{
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+        display: flex;
+        font-size: 10px;
+       
+    }
+    .project-container:hover{
+        height:200px ;
+        width: 200px;
+        box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+    }
+    .project-container:hover .description{
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .tools-head{
+        font-size: 30px;
+        position: relative;
+        bottom: 0px;
+        animation: skillheadAni2 2s;
+    }
+    .tool-set-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        flex-direction:row;
+    }
+    input{
+        padding: 10px;
+        font-size: 10px;
+    }
+    textarea{
+        font-size: 10px;
+    }
+    .submit-contact{
+        height: 30px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    @keyframes skillheadAni2{
+        0%{
+            opacity: 0;
+            position: relative;
+            bottom: 100px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            bottom: 0px;
+        }
+    }
+    .tool{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+} 
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 30px;
+    }
+    .profile{
+    
+        height: 300px;
+    }
+    .Home{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        width: 100vw;
+    }
+    .about-head{
+        font-size: 35px;
+    }
+    .about-desc{
+        font-size: 15px;
+    }
+    .footer-text{
+        font-size: 15px;
+    }
+    .about{
+        font-size: 10px;
+    }
+    .introduction{
+        width: 100%;
+    }
+    .intro{
+        width: 100vw;
+    }
+    .left-section-home{
+        width: 100vw;
+    }
+    .about{
+        height: 150vh;
+    }
+    .project{
+        height: 150vh;
+    }
+    .tool{
+        height: 100vh;
+    }
+    .contact{
+        height:100vh;
+    }
+    .skills{
+        height: 150vh;
+    }
+    .right-section-home{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        width: 100vw;
+    }
+    .project-head{
+        position: relative;
+        top: 0px;
+        font-size: 30px;
+        animation: projectAni2 2s;
+    }
+    .proj{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-container{
+        margin-bottom: 20px;
+        height: 100px;
+        width: 100px;
+    }
+    .nav-mobile{
+        display: block;
+    }
+   
+    #mobile-menu-button{
+        background-color: lightblue;
+        color: lightcoral;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        height: 30px;
+        width:80px;
+        position: relative;
+        right: 0px;
+        top: 10px;
+    }
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nav-window{
+        display: none;
+    }
+    @keyframes projectAni2 {
+        0%{
+            opacity: 0;
+            position: relative;
+            top: 150px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            top: 0px;
+        }
+    }
+    .skills-head{
+        font-size: 30px;
+        position: relative;
+        top: -150px;
+        animation: skillheadAni3 2s;
+    }
+    @keyframes skillheadAni3{
+        0%{
+            opacity: 0;
+            position: relative;
+           top: 50px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+           top: -150px;
+        }
+    }
+    .skill{
+        height: 50px;
+        width: 80px;
+        font-size: 17px;
+    }
+    .image-projects{
+        height: 50px;
+    }
+    .project-name{
+        font-size: 19px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .project-container{
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+        display: flex;
+        font-size: 10px;
+       
+    }
+    .project-container:hover{
+        height:200px ;
+        width: 200px;
+        box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+    }
+    .project-container:hover .description{
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .tools-head{
+        font-size: 30px;
+        position: relative;
+        bottom: 0px;
+        animation: skillheadAni2 2s;
+    }
+    .tool-set-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        flex-direction:row;
+    }
+    input{
+        padding: 10px;
+        font-size: 10px;
+    }
+    textarea{
+        font-size: 10px;
+    }
+    .submit-contact{
+        height: 30px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    @keyframes skillheadAni2{
+        0%{
+            opacity: 0;
+            position: relative;
+            bottom: 100px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            bottom: 0px;
+        }
+    }
+    .tool{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+    #mobile-menu-button{
+        background-color: lightblue;
+        color: lightcoral;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        height: 30px;
+        width:80px;
+        position: relative;
+        right: 0px;
+        top: 10px;
+    }
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nav-window{
+        display: none;
+    }
+} 
+
+
+@media screen and (max-width: 300px) and (max-height: 300px) {
+    .skills{
+        height: 130vh;
+    }  
+    #mobile-menu-button{
+        background-color: lightblue;
+        color: lightcoral;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        height: 30px;
+        width:80px;
+        position: relative;
+        right: 0px;
+        top: 10px;
+    }
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nav-window{
+        display: none;
+    } 
+}
+
+
+
+@media screen and (max-width: 375px) and (max-height:700px){
+    /* nav{
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        background-color: black;
+        color: lightcoral; 
+        width: 100vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+    } */
+    
+    .head{
+        margin: 0px;
+        width: 100vw;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .profile{
+    
+        height: 200px;
+    }
+    .Home{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        width: 100vw;
+    }
+    .about-head{
+        font-size: 30px;
+    }
+    .about-desc{
+        font-size: 15px;
+    }
+    .footer-text{
+        font-size: 15px;
+    }
+    .about{
+        font-size: 10px;
+        height: 110vh;
+    }
+    .introduction{
+        width: 100%;
+    }
+    .intro{
+        width: 100vw;
+    }
+    .left-section-home{
+        width: 100vw;
+    }
+    
+    .Projects{
+        height: 120vh;
+    }
+    .tool{
+        height: 100vh;
+    }
+    .contact{
+        height:100vh;
+    }
+    .skills{
+        height: 150vh;
+    }
+    .right-section-home{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        width: 100vw;
+    }
+    .project-head{
+        position: relative;
+        top: 0px;
+        font-size: 30px;
+        animation: projectAni2 2s;
+    }
+    .proj{
+        display: flex;
+        flex-direction: row;
+    }
+    .project-container{
+        margin-bottom: 20px;
+        height: 100px;
+        width: 100px;
+    }
+    @keyframes projectAni2 {
+        0%{
+            opacity: 0;
+            position: relative;
+            top: 150px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            top: 0px;
+        }
+    }
+    .skills-head{
+        font-size: 30px;
+        position: relative;
+        top: -200px;
+        animation: skillheadAni3 2s;
+    }
+    @keyframes skillheadAni3{
+        0%{
+            opacity: 0;
+            position: relative;
+           top: -100px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+           top: -200px;
+        }
+    }
+    .skill{
+        height: 20px;
+        width: 200px;
+        font-size: 17px;
+    }
+    .image-projects{
+        height: 50px;
+    }
+    .project-name{
+        font-size: 19px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .project-container{
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+        display: flex;
+        font-size: 10px;
+       
+    }
+    .project-container:hover{
+        height:200px ;
+        width: 200px;
+        box-shadow: 5px 5px 10px rgb(173, 216, 230 , 0.5);
+    }
+    .project-container:hover .description{
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .tools{
+        height: 150vh;
+    }
+    .tools-head{
+        font-size: 30px;
+        position: relative;
+        bottom: 100px;
+        animation: toolheadAni3 2s;
+    }
+    @keyframes toolheadAni3{
+        0%{
+            opacity: 0;
+            position: relative;
+           bottom: 200px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+           bottom: 100px;
+        }
+    }
+    .tool-set-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        flex-direction:row;
+    }
+    input{
+        padding: 10px;
+        font-size: 10px;
+        width: 90px;
+    }
+    textarea{
+        font-size: 10px;
+        width: 200px;
+    }
+    .submit-contact{
+        height: 30px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    @keyframes skillheadAni2{
+        0%{
+            opacity: 0;
+            position: relative;
+            bottom: 100px;
+        }
+        100%{
+            opacity: 1;
+            position: relative;
+            bottom: 0px;
+        }
+    }
+    .tool{
+        height: 80px;
+        width: 130px;
+        font-size: 17px;
+    }
+    .nav-mobile{
+        display: block;
+    }
+   
+    #mobile-menu-button{
+        background-color: lightblue;
+        color: lightcoral;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        height: 30px;
+        width:80px;
+        position: relative;
+        right: 0px;
+        top: 10px;
+    }
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nav-window{
+        display: none;
+    }
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown.active{
+    display: block; /* Show dropdown when active */
+    /* Additional styling for the active dropdown */
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px;
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    width: 100vw; /* Adjust as needed */
+    box-shadow: 10 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (max-height:400px){
+        .Home{
+            padding-top: 50px;
+            height: 500px;
+        }
+        .about{
+            height: 500px;
+        }
+        .tools{
+            height: 500px;
+        }
+        .Projects{
+            height: 500px;
+        }
+        .project-head{
+            position: relative;
+          top: -30px;
+            animation: projectAni69 2s;
+        }
+
+        @keyframes projectAni69 {
+            0%{
+                opacity: 0;
+                position: relative;
+                top:0px;
+            }
+            100%{
+                opacity: 1;
+                position: relative;
+                top: -30px;
+            }
+        }
+        .skills-head{
+            position: relative;
+            top: -250px;
+            animation: skillsAni69 2s;
+        }
+        @keyframes skillsAni69 {
+            0%{
+                opacity: 0;
+                position: relative;
+                top:-300px;
+            }
+            100%{
+                opacity: 1;
+                position: relative;
+                top: -250px;
+            }
+        }
+        .skills{
+            height: 700px;
+        }
+        .contact{
+            height: 500px;
+        }
+        .left-section-home{
+            height: 100%;
+        }
+        .right-section-home{
+            height: 100%;
+        }
+    }
