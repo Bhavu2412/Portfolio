@@ -42,7 +42,7 @@
         message : message
     }
     
-    fetch("http://localhost:8000/mail", {
+    fetch("https://portfolio-10.onrender.com/mail", {
        method: "POST",
        headers: {
          "Content-Type": "application/json"
