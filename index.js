@@ -64,7 +64,7 @@
   
  
  downloadButton.addEventListener('click', function() {
-     const pdfUrl = 'BhavyaPatel.pdf';
+     const pdfUrl = 'BhavyaSPatelResume-2.pdf';
         
     // Create a temporary anchor element
     const anchor = document.createElement('a');
